@@ -1,0 +1,39 @@
+{
+  "name": "tmt",
+  "version": "1.0.0",
+  "description": "Translate.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel index.html options.html",
+    "build": "npx parcel build index.html options.html"
+  },
+  "author": "Xis",
+  "license": "MIT",
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "icons",
+        "staticOutDir": "icons"
+      },
+      {
+        "staticPath": "lib",
+        "staticOutDir": "lib"
+      },
+      "manifest.json"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "less": "^4.1.1",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "dependencies": {
+    "@fluentui/react": "^8.14.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
